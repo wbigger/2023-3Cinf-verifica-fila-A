@@ -19,7 +19,7 @@ int main()
         // Test
         r = 10.0F;
         area = calcola_area_cerchio(r);
-        printf("L'area del cerchio di raggio %0.3f e': %0.4f m/s\n", r, area);
+        printf("L'area del cerchio di raggio %0.3f e': %0.4f\n", r, area);
         assert((area > 314.159F - 0.01F) && (area < 314.159F + 0.01F));
         n_punti_test += 1;
         printf("Hai completato %d punti\n", n_punti_test);
@@ -28,7 +28,7 @@ int main()
         // Test
         r = 58.0F;
         area = calcola_area_cerchio(r);
-        printf("L'area del cerchio di raggio %0.3f e': %0.4f m/s\n", r, area);
+        printf("L'area del cerchio di raggio %0.3f e': %0.4f\n", r, area);
         assert((area > 10566.0F - 4.0F) && (area < 10566.0F + 4.0F));
         n_punti_test += 1;
         printf("Hai completato %d punti\n", n_punti_test);
@@ -37,7 +37,7 @@ int main()
         // Test
         r = 0.0F;
         area = calcola_area_cerchio(r);
-        printf("L'area del cerchio di raggio %0.3f e': %0.4f m/s\n", r, area);
+        printf("L'area del cerchio di raggio %0.3f e': %0.4f\n", r, area);
         assert(area == 0.0F);
         n_punti_test += 1;
         printf("Hai completato %d punti\n", n_punti_test);
@@ -46,7 +46,7 @@ int main()
         // Test
         r = -10.0F;
         area = calcola_area_cerchio(r);
-        printf("L'area del cerchio di raggio %0.3f e': %0.4f m/s\n", r, area);
+        printf("L'area del cerchio di raggio %0.3f e': %0.4f\n", r, area);
         assert(area == 0.0F);
         n_punti_test += 1;
         printf("Hai completato %d punti\n", n_punti_test);
@@ -55,7 +55,7 @@ int main()
         // Test
         r = INFINITY;
         area = calcola_area_cerchio(r);
-        printf("L'area del cerchio di raggio %0.3f e': %0.4f m/s\n", r, area);
+        printf("L'area del cerchio di raggio %0.3f e': %0.4f\n", r, area);
         assert(isinf(area));
         n_punti_test += 1;
         printf("Hai completato %d punti\n", n_punti_test);
@@ -64,7 +64,7 @@ int main()
         // Test
         r = -INFINITY;
         area = calcola_area_cerchio(r);
-        printf("L'area del cerchio di raggio %0.3f e': %0.4f m/s\n", r, area);
+        printf("L'area del cerchio di raggio %0.3f e': %0.4f\n", r, area);
         assert(area == 0.0F);
         n_punti_test += 1;
         printf("Hai completato %d punti\n", n_punti_test);
@@ -78,7 +78,7 @@ int main()
         r = 10;
         alpha = 90;
         l = calcola_arco_circonferenza(r, alpha);
-        printf("La lunghezza dell'arco di circonferenza con raggio r %0.3f ed alpha %0.3F e': %0.4f m/s\n", r, alpha, l);
+        printf("La lunghezza dell'arco di circonferenza con raggio r %0.3f ed alpha %0.3F e': %0.4f\n", r, alpha, l);
         assert( (l > 15.708F - 0.01) && (l < 15.708F + 0.01) );
         n_punti_test += 1;
         printf("Hai completato %d punti\n", n_punti_test);
@@ -87,16 +87,7 @@ int main()
         r = 20;
         alpha = 200;
         l = calcola_arco_circonferenza(r, alpha);
-        printf("La lunghezza dell'arco di circonferenza con raggio r %0.3f ed alpha %0.3F e': %0.4f m/s\n", r, alpha, l);
-        assert( (l > 69.813F - 0.01) && (l < 69.813F + 0.01) );
-        n_punti_test += 1;
-        printf("Hai completato %d punti\n", n_punti_test);
-        printf("\n");
-
-        r = 20;
-        alpha = 200;
-        l = calcola_arco_circonferenza(r, alpha);
-        printf("La lunghezza dell'arco di circonferenza con raggio r %0.3f ed alpha %0.3F e': %0.4f m/s\n", r, alpha, l);
+        printf("La lunghezza dell'arco di circonferenza con raggio r %0.3f ed alpha %0.3F e': %0.4f\n", r, alpha, l);
         assert( (l > 69.813F - 0.01) && (l < 69.813F + 0.01) );
         n_punti_test += 1;
         printf("Hai completato %d punti\n", n_punti_test);
@@ -105,7 +96,7 @@ int main()
         r = 20;
         alpha = -200;
         l = calcola_arco_circonferenza(r, alpha);
-        printf("La lunghezza dell'arco di circonferenza con raggio r %0.3f ed alpha %0.3F e': %0.4f m/s\n", r, alpha, l);
+        printf("La lunghezza dell'arco di circonferenza con raggio r %0.3f ed alpha %0.3F e': %0.4f\n", r, alpha, l);
         assert( (l > 69.813F - 0.01) && (l < 69.813F + 0.01) );
         n_punti_test += 1;
         printf("Hai completato %d punti\n", n_punti_test);
@@ -114,7 +105,7 @@ int main()
         r = 30;
         alpha = 400;
         l = calcola_arco_circonferenza(r, alpha);
-        printf("La lunghezza dell'arco di circonferenza con raggio r %0.3f ed alpha %0.3F e': %0.4f m/s\n", r, alpha, l);
+        printf("La lunghezza dell'arco di circonferenza con raggio r %0.3f ed alpha %0.3F e': %0.4f\n", r, alpha, l);
         assert( (l > 188.496F - 0.01) && (l < 188.496F + 0.01) );
         n_punti_test += 1;
         printf("Hai completato %d punti\n", n_punti_test);
@@ -123,7 +114,7 @@ int main()
         r = 30;
         alpha = -7000;
         l = calcola_arco_circonferenza(r, alpha);
-        printf("La lunghezza dell'arco di circonferenza con raggio r %0.3f ed alpha %0.3F e': %0.4f m/s\n", r, alpha, l);
+        printf("La lunghezza dell'arco di circonferenza con raggio r %0.3f ed alpha %0.3F e': %0.4f\n", r, alpha, l);
         assert( (l > 188.496F - 0.01) && (l < 188.496F + 0.01) );
         n_punti_test += 1;
         printf("Hai completato %d punti\n", n_punti_test);
