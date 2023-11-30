@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.gs": "javascript",
+        "math.h": "c",
+        "cerchio.h": "c"
+    }
+}
