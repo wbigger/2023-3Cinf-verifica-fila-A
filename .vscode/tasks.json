@@ -2,11 +2,10 @@
     "tasks": [
         {
             "type": "cppbuild",
-            "label": "C/C++: clang compila il file attivo",
+            "label": "C/C++: gcc build active file",
             "command": "/usr/bin/gcc",
             "args": [
-                "-fcolor-diagnostics",
-                "-fansi-escape-codes",
+                "-fdiagnostics-color=always",
                 "-g",
                 "main.c",
                 "cerchio.c",
@@ -19,11 +18,8 @@
             "problemMatcher": [
                 "$gcc"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            },
-            "detail": "Attività generata dal debugger."
+            "group": "build",
+            "detail": "compiler: /usr/bin/gcc"
         }
     ],
     "version": "2.0.0"
