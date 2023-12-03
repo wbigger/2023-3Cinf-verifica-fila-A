@@ -3,5 +3,6 @@
         "*.gs": "javascript",
         "math.h": "c",
         "cerchio.h": "c"
-    }
+    },
+    "extensions.ignoreRecommendations": true,
 }
